@@ -5,3 +5,8 @@
 .additional-text {
     @include fonts($textFont, 400, 14px, 1.4);
 }
+
+.time {
+    color: $mainColor;
+    margin-bottom: 10px;
+}

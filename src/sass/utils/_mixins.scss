@@ -54,3 +54,8 @@
   font-size: $fs;
   line-height: $lh;
 }
+
+@mixin size($w, $h) {
+  width: $w;
+  height: $h;
+}

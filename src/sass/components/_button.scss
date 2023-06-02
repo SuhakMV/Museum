@@ -1,0 +1,54 @@
+.button-primary {
+  @include fonts($textFont, 600, 16px, 1);
+  background-color: $mainColor;
+  color: $whiteColor;
+
+  &:hover {
+    background-color: $hoverColor;
+  }
+
+  &:active {
+    background-color: $pressedColor;
+  }
+
+  @include mq(mobile-only) {
+    @include size(280px, 60px);
+  }
+
+  @include mq(tablet-only) {
+    @include size(330px, 60px);
+  }
+
+  @include mq(desktop) {
+    @include size(270px, 60px);
+  }
+}
+
+.button-secondary {
+  @include fonts($textFont, 600, 16px, 1);
+  color: $mainColor;
+
+  border: 2px solid $mainColor;
+
+  &:hover {
+    border: 2px solid $hoverColor;
+    color: $hoverColor;
+  }
+
+  &:active {
+    border: 2px solid $pressedColor;
+    color: $pressedColor;
+  }
+
+  @include mq(mobile-only) {
+    @include size(280px, 60px);
+  }
+
+  @include mq(tablet-only) {
+    @include size(330px, 60px);
+  }
+
+  @include mq(desktop) {
+    @include size(270px, 60px);
+  }
+}
