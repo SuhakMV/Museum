@@ -1,0 +1,28 @@
+.header {
+    background-color: #3F5252;
+    border: none;
+    animation: header 1500ms ease-in-out;
+  
+    @include mq(desktop) {
+      padding-top: 37px;
+    }
+  
+    @include mq(not-desktop) {
+      padding-top: 32px;
+    }
+  
+    @include mq(mobile-only) {
+      padding-top: 8px;
+      position: fixed;
+      z-index: 100;
+      width: 100%;
+    }
+  }
+
+  .header__content {
+    color: #F1F5F4;
+  }
+
+  .header__title {
+    @include fonts($titleFont, 700, 96px, 1)
+  }

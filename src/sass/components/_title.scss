@@ -1,0 +1,77 @@
+//h1
+.main-title {
+  line-height: 1;
+  @include mq(mobile-only) {
+    font-size: 48px;
+  }
+
+  @include mq(tablet-only) {
+    font-size: 72px;
+  }
+
+  @include mq(desktop) {
+    font-size: 96px;
+  }
+}
+
+//h2
+.section-title {
+  line-height: 1;
+  @include mq(mobile-only) {
+    font-size: 38px;
+  }
+
+  @include mq(tablet-only) {
+    font-size: 62px;
+  }
+
+  @include mq(desktop) {
+    font-size: 80px;
+  }
+}
+
+//h3
+.title {
+  line-height: 1.25;
+  @include mq(mobile-only) {
+    font-size: 28px;
+  }
+
+  @include mq(tablet-only) {
+    font-size: 40px;
+  }
+
+  @include mq(desktop) {
+    font-size: 48px;
+  }
+}
+
+//h4
+.item-title {
+  line-height: 1.25;
+  @include mq(mobile-only) {
+    font-size: 20px;
+  }
+
+  @include mq(tablet) {
+    font-size: 24px;
+  }
+}
+
+//h5
+.list-title {
+  line-height: 1.5;
+  @include mq(mobile-only) {
+    font-size: 18px;
+  }
+
+  @include mq(tablet) {
+    font-size: 20px;
+  }
+}
+
+//h6
+.time-title {
+    line-height: 1.25;
+    font-size: 14px;
+  }
